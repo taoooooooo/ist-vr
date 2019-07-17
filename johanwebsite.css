@@ -1,0 +1,68 @@
+
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+}
+
+body > h2 {
+	font-family: "Nunito", sans-serif;
+}
+
+header {
+	background-color:rgb(114,128,229);
+	padding: 10px 10px 10px 10px;
+}
+
+header > h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+}
+
+header > nav > ul > li{
+	border-bottom: solid rgb(198,198,198) 3px;
+	display: inline-block;
+}
+
+body > img {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+
+}
+
+body > p {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 20px;
+
+}
+
+img {
+	float: left;
+	clear: both;
+}
+
+nav {
+	background-color: rgb(110,0,255);
+}
+
+nav > ul {
+  padding: 0px;
+}
+
+header > nav > ul > li > a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+header > nav > ul > li {
+	padding: 20px 30px 20px 30px;
+	display: inline-block;
+	font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+
+
+
