@@ -60,3 +60,9 @@ header > nav > ul > li {
 	display: inline-block;
 	font-family: 'Rubik Mono One', sans-serif;
 }
+
+.youtube-video {
+	height: 315px;
+	width: 550px;
+
+}
