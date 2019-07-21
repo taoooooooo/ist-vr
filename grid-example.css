@@ -18,7 +18,9 @@ header {
 	color: #fff;
 	border-style: solid;
 	border-width: 2px;
-
+	display: grid;
+	align-items: center;
+	justify-items: center;
 	grid-area: header;
 }
 aside {
@@ -27,7 +29,9 @@ aside {
 	border-style: solid;
 	float: left;
 	width: 6.3rem;
-
+	display: grid;
+	align-items: center;
+	justify-items: center;
 	grid-area: sidebar;
 }
 footer {
@@ -35,7 +39,9 @@ footer {
 	border-width: 2px;
 	border-style: solid;
 	clear: both;
-
+	display: grid;
+	align-items: center;
+	justify-items: center;
 	grid-area: footer;
 }
 main {
@@ -51,10 +57,12 @@ main > article {
 	background-image: url('https://source.unsplash.com/daily');
 	color: hsl(240, 0%, 100%);
 	border-width: 5px;
-
+	display: grid;
+	align-items: center;
+	justify-items: center;
 	display: grid;
 	grid-gap: 0.1vw;
-	grid-template-columns: repeat(auto-fit, 6rem);
+	grid-template-columns: repeat(auto-fill, 6rem);
 	grid-template-rows: repeat(auto-fill, 6rem);
 }
 
