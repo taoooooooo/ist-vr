@@ -67,7 +67,7 @@ main > article {
 }
 
 @supports (display: grid) {
-	main {
+	main, aside {
 		width: auto;
 	}
 }
@@ -75,4 +75,12 @@ main > article {
 main article:nth-child(2) {
 	grid-column: 2/span 4;
 	grid-row: 1/span 2;
+}
+
+@media all and (max-width: 575px) {
+	body {
+		grid-template-rows: 6rem 1fr 5.5rem 5.5rem;
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "content" "sidebar" "footer";
+	}
 }
