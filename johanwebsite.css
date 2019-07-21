@@ -8,7 +8,7 @@ body {
 
 	display: grid;
 	grid-gap: 0.1vw;
-	grid-template-columns: 1/4fr 1/4fr 1/4fr 1/4fr;
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 6rem 3rem;
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
@@ -49,21 +49,32 @@ header > h1 {
 nav {
 	background-color: rgb(110, 0, 255);
 	border-bottom: solid rgb(198, 198, 198) 3px;
-	font-family: 'Rubik Mono One', sans-serif;
-	
+	font-family: 'Rubik Mono One', sans-serif;	
+	display: grid;
+	grid-area: nav;
 }
-nav > a {
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+	justify-content: space-evenly;
+
+}
+
+nav > ul > li {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+nav > ul > li > a {
 	color: white;
 	text-decoration: none;
 	display: grid;
-	grid-area: nav;
-	align-items: center;
+
 }
- 
-
-
-
-
 
 
 
