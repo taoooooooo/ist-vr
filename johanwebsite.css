@@ -12,7 +12,7 @@ body {
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: 1/4fr 1/4fr 1/4fr 1/4fr;
-	grid-template-rows: 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr;
+	grid-template-rows: 1fr 3rem;
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
 		/* "what-is-vr what-is-vr what-is-vr what-is-vr"
@@ -22,18 +22,6 @@ body {
 
 body > h2 {
 	font-family: "Nunito", sans-serif;
-}
-
-header {
-	background-color: rgb(114, 128, 229);
-	padding: 10px 10px 10px 10px;
-	grid-area: header;
-}
-
-header > h1 {
-	font-family: 'Rubik Mono One', sans-serif;
-	text-align: center;
-	align-items: center;
 }
 
 body > img {
@@ -48,11 +36,23 @@ body > p {
 	font-size: 20px;
 }
 
+header {
+	background-color: rgb(114, 128, 229);
+	padding: 10px 10px 10px 10px;
+	grid-area: header;
+}
+
+header > h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+	align-items: center;
+}
+
 nav {
 	background-color: rgb(110, 0, 255);
 	text-align: center;
 	border-bottom: solid rgb(198, 198, 198) 3px;
-	display: inline-block;
+	font-family: 'Rubik Mono One', sans-serif;
 	grid-area: nav;
 
 }
@@ -62,11 +62,14 @@ nav > a {
 	text-decoration: none;
 }
 
-nav {
-	padding: 20px 30px 20px 30px;
-	display: inline-block;
-	font-family: 'Rubik Mono One', sans-serif;
-}
+
+
+
+
+
+
+
+
 /* 
 .youtube-video {
 	height: 315px;
