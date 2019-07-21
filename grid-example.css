@@ -3,7 +3,8 @@ body {
 	margin: 0rem;
 	padding: 0px;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-		"Droid Sans", "Helvetica Neue", sans-serif;
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: 6.5rem 1fr;
@@ -17,6 +18,7 @@ header {
 	color: #fff;
 	border-style: solid;
   border-width: 2px;
+
   grid-area: header;
 }
 aside {
@@ -25,6 +27,7 @@ aside {
 	border-style: solid;
 	float: left;
   width: 6.3rem;
+  
   grid-area: sidebar;
 }
 footer {
@@ -32,6 +35,7 @@ footer {
 	border-width: 2px;
 	border-style: solid;
   clear: both;
+  
   grid-area: footer;
 }
 main {
@@ -39,6 +43,7 @@ main {
 	width: calc(100% - 7.2rem);
 	padding: 5px;
   background: hsl(240, 100%, 50%);
+  
   grid-area: content;
 }
 main > article {
@@ -46,5 +51,11 @@ main > article {
 	background-image: url('https://source.unsplash.com/daily');
 	color: hsl(240, 0%, 100%);
 	border-width: 5px;
+}
+
+@supports (display: grid) {
+  main {
+    width:  auto;
+  }
 }
 
