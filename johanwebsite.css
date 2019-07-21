@@ -3,7 +3,21 @@
 }
 
 body {
-	margin: 0;
+	/* background: #12458c; */
+	margin: 0rem;
+	padding: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+
+	display: grid;
+	grid-gap: 0.1vw;
+	grid-template-columns: 1/4fr 1/4fr 1/4fr 1/4fr;
+	grid-template-rows: 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr;
+	grid-template-areas: "header header header header" 
+		"nav nav nav nav" 
+		/* "what-is-vr what-is-vr what-is-vr what-is-vr"
+		"image1"
+		"footer footer"; */
 }
 
 body > h2 {
@@ -13,16 +27,13 @@ body > h2 {
 header {
 	background-color: rgb(114, 128, 229);
 	padding: 10px 10px 10px 10px;
+	grid-area: header;
 }
 
 header > h1 {
 	font-family: 'Rubik Mono One', sans-serif;
 	text-align: center;
-}
-
-header > nav > ul > li {
-	border-bottom: solid rgb(198, 198, 198) 3px;
-	display: inline-block;
+	align-items: center;
 }
 
 body > img {
@@ -37,30 +48,60 @@ body > p {
 	font-size: 20px;
 }
 
-
-
 nav {
 	background-color: rgb(110, 0, 255);
-}
+	text-align: center;
+	border-bottom: solid rgb(198, 198, 198) 3px;
+	display: inline-block;
+	grid-area: nav;
 
-nav > ul {
-	padding: 0px;
 }
-
-header > nav > ul > li > a {
+nav > a {
 	display: inline-block;
 	color: white;
 	text-decoration: none;
 }
 
-header > nav > ul > li {
+nav {
 	padding: 20px 30px 20px 30px;
 	display: inline-block;
 	font-family: 'Rubik Mono One', sans-serif;
 }
-
+/* 
 .youtube-video {
 	height: 315px;
 	width: 550px;
-
 }
+
+.what-is-vr {
+	display: grid;
+	grid-gap: 0.1vw;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "image header content" "content content video";
+}
+
+.history-of-vr {
+	display: grid;
+	grid-gap: 0.1vw;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 6.5rem 1fr;
+	grid-template-areas: "image header content" "image content content" "footer content content" "content content video";
+}
+
+.uses-of-vr {
+	display: grid;
+	grid-gap: 0.1vw;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "video content";
+}
+
+.risks-of-vr {
+	display: grid;
+	grid-gap: 0.1vw;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr; 
+	grid-template-areas: "content image";
+}
+*/
