@@ -10,14 +10,14 @@ body {
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 6rem 3rem 3rem;
+	grid-template-rows: 6rem 3rem 3rem 30rem;
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
 		"title1 title1 title1 title1"
-	/*	"video1 video1 text1 text1"
-		 "what-is-vr what-is-vr what-is-vr what-is-vr"
+		"video1 video1 text1 text1"
+		 /* "what-is-vr what-is-vr what-is-vr what-is-vr"
 		"image1"
-		"footer footer"; */
+		"footer footer";  */
 }
 body > h2 {
 	font-family: "Nunito", sans-serif;
@@ -91,21 +91,20 @@ nav > ul > li > a {
 #video1 {
 	display: grid;
 	grid-area: video1;
+	align-items: center;
+	justify-items: center;
+	grid-column: 1/span 2;
 }
 
 #text1 {
 	display: grid;
 	grid-area: text1;
 }
-
-
-
-/* 
 .youtube-video {
-	height: 315px;
-	width: 550px;
+	height: 95%;
+	width: 95%;
 }
-
+/* 
 .what-is-vr {
 	display: grid;
 	grid-gap: 0.1vw;
