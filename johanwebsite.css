@@ -10,14 +10,14 @@ body {
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 6rem 3rem 3rem 20rem;
+	grid-template-rows: 6rem 3rem 3rem 20rem 3rem 15rem 15rem;
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
 		"title1 title1 title1 title1"
 		"video1 video1 text1 text1"
-		 /* "what-is-vr what-is-vr what-is-vr what-is-vr"
-		"image1"
-		"footer footer";  */
+		"title2 title2 title2 title2"
+		"img1 img1 img2 img2"
+		"text2 text2 text2 text2"
 }
 body > h2 {
 	font-family: "Nunito", sans-serif;
@@ -35,7 +35,7 @@ body > img {
 body > div > p {
 	font-family: "Ubuntu", sans-serif;
 	font-size: 20px;
-	padding: 0px;
+	padding: 5%;
 	margin: 0px;
 } 
 
@@ -105,10 +105,48 @@ nav > ul > li > a {
 	align-items: center;
 	justify-items: center;
 }
+
+#title2 {
+	display: grid;
+	grid-area: title2;
+	align-items: center;
+	justify-items: center;
+	grid-column: 1;
+}
+
+#text2 {
+	display: grid;
+	grid-area: text2;
+	grid-column: 1/span 4;
+	align-items: center;
+	justify-items: center;
+}
+
+#img1 {
+	display: grid;
+	grid-area: img1;
+	grid-column: 1/span 2;
+	align-items: center;
+	justify-items: center;
+}
+
+#img2 {
+	display: grid;
+	grid-area: img2;
+	grid-column: 3/span 2;
+	align-items: center;
+	justify-items: center;
+} 
+
 .youtube-video {
 	height: 95%;
 	width: 95%;
 }
+
+/* .image-class {
+	width: 95%;
+	height: 95%;
+} */
 /* 
 .what-is-vr {
 	display: grid;
