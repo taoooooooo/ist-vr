@@ -10,7 +10,7 @@ body {
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 6rem 3rem 3rem 30rem;
+	grid-template-rows: 6rem 3rem 3rem 20rem;
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
 		"title1 title1 title1 title1"
@@ -32,9 +32,11 @@ body > img {
 	clear: both;
 }
 
-body > p {
+body > div > p {
 	font-family: "Ubuntu", sans-serif;
 	font-size: 20px;
+	padding: 0px;
+	margin: 0px;
 } 
 
 header {
@@ -99,6 +101,9 @@ nav > ul > li > a {
 #text1 {
 	display: grid;
 	grid-area: text1;
+	grid-column: 3/span 2;
+	align-items: center;
+	justify-items: center;
 }
 .youtube-video {
 	height: 95%;
