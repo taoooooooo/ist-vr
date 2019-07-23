@@ -10,7 +10,7 @@ body {
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 6rem 3rem 5rem 20rem 3rem 15rem 15rem 3rem 15rem 25rem 3rem 23rem;  
+	grid-template-rows: 6rem 3rem 5rem 20rem 3rem 15rem 15rem 3rem 15rem 25rem 3rem 23rem 3rem;  
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
 		"title1 title1 title1 title1"
@@ -23,6 +23,7 @@ body {
 		"video2 video2 img3 img3"
 		"title4 title4 title4 title4"
 		"text4 text4 img4 img4"  
+		"footer footer footer footer"
 }
 
 body > h2 {
@@ -204,3 +205,11 @@ nav > ul > li > a {
 	align-items: center;
 	justify-items: center;
 } 
+
+#footer {
+	display: grid;
+	grid-area: footer;
+	align-items: center;
+	justify-items: center;
+	grid-column: 1/span 4;
+}
