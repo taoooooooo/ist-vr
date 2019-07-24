@@ -9,20 +9,6 @@ body {
 	display: grid;
 	grid-gap: 0.1vw;
 	grid-template-columns: repeat(4, 1fr);
-	/* grid-template-rows: 6rem 4rem 5rem 20rem 4rem 18rem 15rem 4rem 15rem 25rem 4rem 23rem 4rem;  
-	grid-template-areas: "header header header header" 
-		"nav nav nav nav" 
-		"title1 title1 title1 title1"
-		"video1 video1 text1 text1"
-		"title2 title2 title2 title2"
-		"img1 img1 img2 img2"
-		"text2 text2 text2 text2"
-		"title3 title3 title3 title3"
-		"text3 text3 text3 text3"
-		"video2 video2 img3 img3"
-		"title4 title4 title4 title4"
-		"text4 text4 img4 img4"  
-		"footer footer footer footer" */
 	grid-template-rows: 4rem 3rem auto 3rem;
 	grid-template-areas: "header header header header" 
 		"nav nav nav nav" 
