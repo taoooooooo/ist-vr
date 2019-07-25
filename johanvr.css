@@ -167,6 +167,7 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "text5";
+    background-color: rgb(232,233,243);
 }
 
 p {
@@ -274,5 +275,6 @@ p {
     /* grid-column: 1/span 4; */
     /* background-color: rgb(249,145,204); */
     border-radius: 10px 10px 10px 10px;
+    
 }
 
