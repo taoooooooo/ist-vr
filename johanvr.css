@@ -16,7 +16,7 @@ body {
     grid-area: header;
     justify-items: center;
     align-items: center;
-
+    font-family: 'Ubuntu', sans-serif;
     background-color: rgb(249,145,204);
 }
 
@@ -25,7 +25,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "nav nav nav nav nav";
 
-    /* background-color: rgb(216,2,102); */
+    background-color: rgb(140,72,104); 
     border-bottom: solid rgb(198, 198, 198) 3px;
     font-family: 'Ubuntu', sans-serif;	
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .nav > ul > li > a {
-    /* color: white; */
+     color: white; 
     text-decoration: none;
     display: grid;
 }
@@ -81,6 +81,8 @@ h2 {
     justify-items: center;
     align-items: center;
     grid-area: section-title;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(198,188,191);
 }
 
 .section-content {
@@ -169,9 +171,10 @@ h2 {
 
 p {
     font-family: "Ubuntu", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     padding: 5%;
     margin: 0px;
+    background-color: rgb(232,233,243);
 } 
 
 #text1 {
